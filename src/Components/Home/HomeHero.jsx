@@ -16,7 +16,7 @@ const HomeHero = () => {
           <div className="absolute -bottom-4 -right-4 w-full h-full bg-yellow-400 rounded-2xl z-0 group-hover:bottom-0 group-hover:right-0 transition-all duration-300"></div>
           
           {/* Main Image */}
-          <div className="relative z-10 overflow-hidden rounded-2xl bg-black h-[500px] w-full shadow-2xl">
+          <div className="relative z-10 overflow-hidden rounded-2xl bg-black h-125 w-full shadow-2xl">
             <img 
               src={zahid} 
               alt="Digital Marketing Expert" 
@@ -39,7 +39,7 @@ const HomeHero = () => {
           
           <h1 className="text-6xl md:text-7xl font-black text-black leading-none">
             DIGITAL <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">MARKETING</span> <br />
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-blue-400">MARKETING</span> <br />
             SPECIALIST
           </h1>
 

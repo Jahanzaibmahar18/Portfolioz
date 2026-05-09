@@ -9,14 +9,14 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           
           {/* Left: Name/Logo */}
-          <div className="flex-shrink-0">
+          <div className="shrink">
             <h1 className="text-2xl font-black tracking-tighter text-black">
               ZAHID <span className="text-blue-600 uppercase">Hussain</span>
             </h1>
           </div>
 
           {/* Center: Navigation Links (Desktop) */}
-          <div className="hidden md:flex flex-grow justify-center">
+          <div className="hidden md:flex grow justify-center">
             <div className="flex space-x-10">
               <a href="#home" className="text-sm font-bold text-gray-800 hover:text-blue-600 transition-colors uppercase tracking-widest">Home</a>
               <a href="#about" className="text-sm font-bold text-gray-800 hover:text-blue-600 transition-colors uppercase tracking-widest">About</a>

@@ -56,10 +56,10 @@ const ServiceGrid = () => {
             <p className="text-blue-600 font-black uppercase tracking-[0.3em] text-sm mb-4">Core Services</p>
             <h2 className="text-5xl md:text-7xl font-black text-black leading-tight tracking-tighter">
               Precision <br /> 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">Marketing.</span>
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-blue-400">Marketing.</span>
             </h2>
           </div>
-          <p className="text-gray-400 max-w-[280px] font-medium border-l-2 border-gray-100 pl-6">
+          <p className="text-gray-400 max-w-70 font-medium border-l-2 border-gray-100 pl-6">
             We don't just run ads; we build revenue engines for ambitious brands.
           </p>
         </div>

@@ -56,7 +56,7 @@ const MarketingSolutions = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-2xl group">
             <h2 className="text-blue-600 font-bold tracking-[0.2em] uppercase mb-4 flex items-center">
-              <span className="w-12 h-[2px] bg-blue-600 mr-4 transition-all group-hover:w-20"></span> 
+              <span className="w-12 h-0.5 bg-blue-600 mr-4 transition-all group-hover:w-20"></span> 
               Our Expertise
             </h2>
             <h3 className="text-5xl md:text-6xl font-black text-black leading-none tracking-tighter">

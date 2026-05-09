@@ -27,7 +27,7 @@ const HeroServices = () => {
         {/* Header Section */}
         <div className="mb-16">
           <div className="flex items-center space-x-4 mb-4">
-            <span className="h-[2px] w-12 bg-blue-600"></span>
+            <span className="h-0.5 w-12 bg-blue-600"></span>
             <span className="text-blue-600 font-bold uppercase tracking-[0.3em] text-sm font-sans">Our Expertise</span>
           </div>
           <h2 className="text-5xl md:text-6xl font-black text-black leading-tight tracking-tighter font-sans">
@@ -59,11 +59,11 @@ const HeroServices = () => {
           pagination={{
             clickable: true,
           }}
-          className="services-swiper !pb-20"
+          className="services-swiper pb-20!"
         >
           {services.map((item, index) => (
-            <SwiperSlide key={index} className="max-w-[340px] sm:max-w-[380px] px-4">
-              <div className="group relative bg-gray-50 p-10 rounded-[3rem] border border-gray-100 h-[460px] flex flex-col transition-all duration-500 hover:bg-white hover:shadow-2xl overflow-hidden">
+            <SwiperSlide key={index} className="max-w-85 sm:max-w-95 px-4">
+              <div className="group relative bg-gray-50 p-10 rounded-[3rem] border border-gray-100 h-115 flex flex-col transition-all duration-500 hover:bg-white hover:shadow-2xl overflow-hidden">
                 
                 {/* Icon */}
                 <div className={`w-16 h-16 rounded-2xl ${item.bg} flex items-center justify-center text-3xl shadow-lg mb-10 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500`}>
@@ -71,7 +71,7 @@ const HeroServices = () => {
                 </div>
 
                 {/* Content */}
-                <div className="flex-grow">
+                <div className="grow">
                   <h4 className="text-2xl font-black text-black mb-4 tracking-tight group-hover:text-blue-600 transition-colors">
                     {item.title}
                   </h4>

@@ -33,7 +33,7 @@ const ProfessionalJourney = () => {
           <div className="lg:col-span-5">
             <div className="sticky top-28">
               <h2 className="text-blue-600 font-bold tracking-[0.3em] uppercase mb-6 flex items-center">
-                <span className="w-12 h-[2px] bg-blue-600 mr-4"></span> Execution Flow
+                <span className="w-12 h-0.5 bg-blue-600 mr-4"></span> Execution Flow
               </h2>
               <h3 className="text-6xl font-black text-black leading-none mb-8">
                 How We Turn <br /> 
@@ -41,9 +41,9 @@ const ProfessionalJourney = () => {
                 Reality.
               </h3>
               
-              <div className="relative group rounded-[2rem] overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
-                <img 
+              <div className="relative group rounded-4xl overflow-hidden shadow-2xl">
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent z-10"></div>
+                <img  
                   src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800" 
                   alt="Marketing Strategy"
                   className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
@@ -86,7 +86,7 @@ const ProfessionalJourney = () => {
             ))}
 
             {/* Final CTA Card */}
-            <div className="p-1 bg-gradient-to-r from-blue-600 via-yellow-400 to-blue-600 rounded-3xl mt-12 animate-gradient-x">
+            <div className="p-1 bg-linear-to-r from-blue-600 via-yellow-400 to-blue-600 rounded-3xl mt-12 animate-gradient-x">
               <div className="bg-black p-8 rounded-[1.4rem] flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
                   <h5 className="text-white text-xl font-bold italic">Strategy is the difference between guessing and growing.</h5>
