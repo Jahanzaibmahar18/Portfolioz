@@ -1,73 +1,112 @@
-import React from 'react';
-import zahid from '../../assets/zahid.png';
+import React from "react";
+import zahid from "../../assets/zahid.png";
 
 const HomeHero = () => {
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-yellow-400">
-      {/* Navbar yahan alag se call hoga (e.g., <Navbar />) */}
+    <section className="min-h-screen bg-black text-white overflow-hidden flex items-center relative">
+      
+      {/* Background Glow */}
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/20 blur-[150px] rounded-full"></div>
 
-      {/* Main Hero Content */}
-      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-8 pb-20">
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cyan-500/10 blur-[140px] rounded-full"></div>
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24 grid lg:grid-cols-2 gap-20 items-center relative z-10">
         
-        {/* Left Side: Image Container */}
-        <div className="relative group order-2 md:order-1">
-          {/* Decorative Background Elements */}
-          <div className="absolute -top-4 -left-4 w-full h-full border-2 bg-blue-600 border-blue-600 rounded-2xl z-0 group-hover:top-0 group-hover:left-0 transition-all duration-300"></div>
-          <div className="absolute -bottom-4 -right-4 w-full h-full bg-yellow-400 rounded-2xl z-0 group-hover:bottom-0 group-hover:right-0 transition-all duration-300"></div>
+        {/* LEFT CONTENT */}
+        <div className="text-center lg:text-left">
           
-          {/* Main Image */}
-          <div className="relative z-10 overflow-hidden rounded-2xl  h-125 w-full shadow-2xl">
-            <img 
-              src={zahid} 
-              alt="Digital Marketing Expert" 
-              className=" object-cover grayscale hover:grayscale-0 transition duration-500"
-            />
+          {/* Badge */}
+          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-blue-400 text-sm font-semibold mb-8">
+            🚀 Digital Marketing Expert
           </div>
 
-          {/* Floating Stats */}
-          <div className="absolute -bottom-6 -left-6 hover:translate-y-2 duration-300  bg-white p-4 shadow-xl rounded-lg z-20 hidden lg:block border-l-4 border-blue-600"> 
-            <p className="text-sm text-gray-500 font-bold uppercase tracking-wider hover:text-blue-600">Experience</p>
-            <p className="text-3xl font-black text-black">3+ Years</p>
-          </div>
-        </div>
-
-        {/* Right Side: Content */}
-        <div className="space-y-6 order-1 md:order-2">
-          <div className="inline-block px-4 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-bold tracking-wide uppercase">
-            Results-Driven Strategy
-          </div>
-          
-          <h1 className="text-6xl md:text-7xl font-black text-black leading-none">
-            DIGITAL <br />
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-blue-400">MARKETING</span> <br />
-            SPECIALIST
+          {/* Heading */}
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
+            Grow Your
+            <span className="block bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+              Digital Brand
+            </span>
           </h1>
 
-          <p className="text-lg italic text-black max-w-md leading-relaxed">
-            Helping brands dominate the digital landscape through data-backed strategies, 
-            creative storytelling, and high-conversion ad campaigns.
+          {/* Description */}
+          <p className="mt-8 text-lg text-gray-400 leading-relaxed max-w-2xl">
+            Helping businesses scale online with powerful SEO strategies,
+            social media marketing, branding, and high-converting campaigns.
           </p>
 
-          <div className="flex flex-wrap gap-4 pt-4">
-            <button className="px-8 py-4 bg-black text-white font-bold rounded-lg hover:bg-yellow-400 hover:text-black transition-all duration-300 shadow-lg hover:shadow-yellow-200">
-              View My Projects
+          {/* Buttons */}
+          <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-10">
+            
+            <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold shadow-2xl hover:scale-105 hover:shadow-blue-500/30 transition-all duration-300">
+              View Projects
             </button>
-            <button className="px-8 py-4 border-2 border-none text-black font-bold rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300">
-              Let's Talk
+
+            <button className="px-8 py-4 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-xl hover:bg-white hover:text-black transition-all duration-300 font-semibold">
+              Contact Me
             </button>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="pt-8 flex items-center space-x-6">
-            <span className="font-bold text-sm uppercase tracking-widest text-blue-600">Expertise in:</span>
-            <span className="font-black italic hover:text-blue-600 duration-300">Account Management</span>
-            <span className="font-black italic hover:text-blue-600 duration-300">Marketing Expert</span>
-            <span className="font-black italic hover:text-blue-600 duration-300">Ai Content Creator</span>
+          {/* Skills */}
+          <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-12">
+            
+            {[
+              "SEO Expert",
+              "Social Media",
+              "AI Content Creator",
+              "Brand Strategy",
+            ].map((item, index) => (
+              <span
+                key={index}
+                className="px-5 py-3 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl text-gray-300 hover:text-white hover:border-blue-500 hover:scale-105 transition-all duration-300"
+              >
+                {item}
+              </span>
+            ))}
           </div>
         </div>
 
+        {/* RIGHT IMAGE */}
+        <div className="relative flex justify-center">
+          
+          {/* Glow */}
+          <div className="absolute w-[420px] h-[420px] bg-blue-600/20 blur-[120px] rounded-full"></div>
+
+          {/* Image Card */}
+          <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-[40px] p-5 shadow-2xl">
+            
+            <img
+              src={zahid}
+              alt="Zahid Hussain"
+              className="w-[350px] sm:w-[450px] rounded-[30px] object-cover"
+            />
+
+            {/* Experience Card */}
+            <div className="absolute -bottom-6 -left-6 bg-white text-black px-6 py-4 rounded-2xl shadow-2xl">
+              
+              <h3 className="text-3xl font-extrabold text-blue-600">
+                3+
+              </h3>
+
+              <p className="font-medium text-gray-700">
+                Years Experience
+              </p>
+            </div>
+
+            {/* Clients Card */}
+            <div className="absolute -top-6 -right-6 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-4 rounded-2xl shadow-2xl">
+              
+              <h3 className="text-3xl font-extrabold">
+                100+
+              </h3>
+
+              <p className="text-sm text-white/80">
+                Happy Clients
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
