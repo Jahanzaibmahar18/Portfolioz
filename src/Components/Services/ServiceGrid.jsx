@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "lucide-react";
 
 const ServiceGrid = () => {
   const services = [
@@ -114,9 +115,12 @@ const ServiceGrid = () => {
         {/* FOOTER */}
         <div className="mt-14 text-center text-gray-400">
           Need a custom solution?{" "}
+          <Link to="/contact" className="font-bold text-blue-500 hover:text-yellow-400 transition">
           <span className="text-yellow-400 font-bold cursor-pointer border-b border-yellow-400">
             Contact us
           </span>
+          </Link>
+          
         </div>
 
       </div>

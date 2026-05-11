@@ -3,6 +3,8 @@ import Navbar from "./Components/Common/Navbar";
 import Home from "./Components/Pages/Home";
 import AboutSection from "./Components/Pages/About";
 import Services from "./Components/Pages/Services";
+import Contact from "./Components/Pages/Contect";
+
 
 const App = () => {
   return (
@@ -28,14 +30,14 @@ const App = () => {
         <Services />
       </section>
 
-      {/* PROJECTS (placeholder if not created yet) */}
+      {/* PROJECTS (placeholder if not created yet)
       <section id="projects" className="scroll-mt-24 min-h-screen flex items-center justify-center">
         <h1 className="text-4xl font-bold">Projects Coming Soon</h1>
-      </section>
+      </section> */}
 
       {/* CONTACT (placeholder if not created yet) */}
-      <section id="contact" className="scroll-mt-24 min-h-screen flex items-center justify-center">
-        <h1 className="text-4xl font-bold">Contact Section</h1>
+      <section id="contact" className="scroll-mt-24">
+        <Contact/>
       </section>
 
     </div>
