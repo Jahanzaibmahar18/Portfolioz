@@ -1,104 +1,144 @@
-import React from 'react';
+import React from "react";
 
 const ProfessionalJourney = () => {
   const processSteps = [
     {
       number: "01",
-      title: "Market Discovery",
-      desc: "Deep research into your industry, competitors, and target audience behavior."
+      title: "Market Research",
+      desc: "Understanding your industry, audience, and competitors to create a winning strategy.",
     },
     {
       number: "02",
-      title: "Strategy Crafting",
-      desc: "Creating a bespoke digital roadmap focused on high ROI and brand scaling."
+      title: "Strategy Planning",
+      desc: "Crafting a powerful digital roadmap focused on growth, branding, and conversions.",
     },
     {
       number: "03",
-      title: "Execution & Launch",
-      desc: "Deploying multi-channel campaigns with precision and creative excellence."
+      title: "Campaign Launch",
+      desc: "Executing high-performing campaigns across multiple digital platforms.",
     },
     {
       number: "04",
-      title: "Optimization",
-      desc: "Continuous A/B testing and data analysis to maximize performance."
-    }
+      title: "Optimization & Growth",
+      desc: "Monitoring, testing, and improving campaigns for maximum ROI and long-term success.",
+    },
   ];
 
   return (
-    <section className="bg-gray-50 py-24 px-8 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+    <section className="py-24 bg-black text-white relative overflow-hidden">
+      
+      {/* Background Glow */}
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/20 blur-[150px] rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cyan-500/10 blur-[140px] rounded-full"></div>
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+        
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
           
-          {/* Left: Sticky Branding Side */}
-          <div className="lg:col-span-5">
-            <div className="sticky top-28">
-              <h2 className="text-blue-600 font-bold tracking-[0.3em] uppercase mb-6 flex items-center">
-                <span className="w-12 h-0.5 bg-blue-600 mr-4"></span> Execution Flow
-              </h2>
-              <h3 className="text-6xl font-black text-black leading-none mb-8">
-                How We Turn <br /> 
-                <span className="text-blue-600 italic underline decoration-yellow-400">Goals</span> Into <br /> 
-                Reality.
-              </h3>
+          {/* LEFT SIDE */}
+          <div>
+            
+            {/* Badge */}
+            <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/5 border border-white/10 text-blue-400 text-sm font-semibold mb-6">
+              🚀 Workflow Process
+            </div>
+
+            {/* Heading */}
+            <h2 className="text-5xl lg:text-6xl font-extrabold leading-tight">
+              Turning Ideas
+              <span className="block bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+                Into Results
+              </span>
+            </h2>
+
+            {/* Description */}
+            <p className="mt-8 text-gray-400 text-lg leading-relaxed max-w-xl">
+              Every successful project starts with strategy, creativity,
+              execution, and continuous optimization to achieve real growth.
+            </p>
+
+            {/* Image */}
+            <div className="relative mt-12 rounded-[40px] overflow-hidden border border-white/10 shadow-2xl group">
               
-              <div className="relative group rounded-4xl overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent z-10"></div>
-                <img  
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800" 
-                  alt="Marketing Strategy"
-                  className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute bottom-8 left-8 z-20">
-                  <p className="text-yellow-400 font-black text-4xl italic">Ready to Scale?</p>
-                  <p className="text-white font-medium opacity-80 uppercase tracking-widest text-xs mt-2">10 Years of Industry Expertise</p>
-                </div>
+              <img
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1200"
+                alt="Marketing Strategy"
+                className="w-full h-[500px] object-cover group-hover:scale-110 transition duration-700"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+
+              <div className="absolute bottom-10 left-10">
+                <h3 className="text-4xl font-extrabold">
+                  Ready To Scale?
+                </h3>
+                <p className="text-gray-400 mt-2">
+                  Let’s grow your business with strategy.
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Right: Process Steps */}
-          <div className="lg:col-span-7 space-y-4">
+          {/* RIGHT SIDE */}
+          <div className="space-y-6">
+            
             {processSteps.map((step, index) => (
-              <div 
+              <div
                 key={index}
-                className="group p-10 bg-white border border-gray-100 rounded-3xl flex items-start gap-8 transition-all duration-500 hover:shadow-xl hover:border-blue-100 relative"
+                className="group relative bg-white/5 border border-white/10 backdrop-blur-xl rounded-[30px] p-8 hover:-translate-y-2 hover:border-blue-500/30 transition-all duration-500 overflow-hidden"
               >
-                {/* Number Background */}
-                <span className="text-8xl font-black text-gray-50 absolute right-10 top-5 group-hover:text-blue-50 transition-colors pointer-events-none">
-                  {step.number}
-                </span>
+                
+                {/* Glow */}
+                <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-10 transition duration-500"></div>
 
-                <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center font-bold mb-6 group-hover:bg-blue-600 transition-colors shadow-lg">
+                <div className="relative z-10 flex gap-6">
+                  
+                  {/* Number */}
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center font-bold text-white shadow-xl group-hover:scale-110 transition">
                     {step.number}
                   </div>
-                  <h4 className="text-2xl font-black text-black mb-4 group-hover:text-blue-600 transition-colors">
-                    {step.title}
-                  </h4>
-                  <p className="text-gray-500 text-lg leading-relaxed max-w-lg transition-colors group-hover:text-gray-700">
-                    {step.desc}
-                  </p>
+
+                  {/* Content */}
+                  <div>
+                    <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-400 transition">
+                      {step.title}
+                    </h3>
+                    <p className="text-gray-400 leading-relaxed">
+                      {step.desc}
+                    </p>
+                  </div>
                 </div>
 
-                {/* Decorative Line on Hover */}
-                <div className="absolute left-0 top-0 h-full w-2 bg-yellow-400 scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-bottom rounded-l-3xl"></div>
+                {/* Background Number */}
+                <span className="absolute right-6 top-4 text-8xl font-extrabold text-white/5 group-hover:text-blue-500/10 transition">
+                  {step.number}
+                </span>
               </div>
             ))}
 
-            {/* Final CTA Card */}
-            <div className="p-1 bg-linear-to-r from-blue-600 via-yellow-400 to-blue-600 rounded-3xl mt-12 animate-gradient-x">
-              <div className="bg-black p-8 rounded-[1.4rem] flex flex-col md:flex-row items-center justify-between gap-6">
+            {/* CTA */}
+            <div className="relative mt-12 p-10 rounded-[40px] bg-white/5 border border-white/10 backdrop-blur-xl overflow-hidden">
+              
+              <div className="absolute top-0 right-0 w-72 h-72 bg-blue-600/20 blur-[140px]"></div>
+
+              <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+                
                 <div>
-                  <h5 className="text-white text-xl font-bold italic">Strategy is the difference between guessing and growing.</h5>
-                  <p className="text-gray-400 text-sm mt-1">Let's build a custom plan for your business.</p>
+                  <h3 className="text-3xl font-extrabold">
+                    Let’s Build Your Growth Strategy
+                  </h3>
+                  <p className="text-gray-400 mt-2">
+                    Start your transformation today.
+                  </p>
                 </div>
-                <button className="whitespace-nowrap bg-white text-black px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-yellow-400 transition-colors shadow-xl">
-                  Get My Plan
+
+                <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl font-bold hover:scale-105 transition shadow-2xl">
+                  Get Started
                 </button>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </section>

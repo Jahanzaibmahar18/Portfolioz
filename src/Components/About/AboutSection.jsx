@@ -1,95 +1,190 @@
-import React from 'react';
+import React from "react";
+import {
+  Zap,
+  BarChart3,
+  MessageCircle,
+  Search,
+  TrendingUp,
+  Target,
+} from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
-    { title: 'Search Engine Optimization', desc: 'Expertise in improving Google rankings and increasing organic traffic.', color: 'border-blue-400' },
-    { title: 'Social Media Marketing', desc: 'Strategies for building brand awareness and engaging with audiences on social platforms.', color: 'border-yellow-400' },
-    { title: 'Content Strategy', desc: 'Creating compelling content that resonates with the target audience and drives conversions.', color: 'border-yellow-400' },
-    { title: 'Data Analytics', desc: 'Analyzing campaign performance and optimizing strategies for improved ROI.', color: 'border-blue-400' }
+    {
+      title: "SEO Optimization",
+      desc: "Boosting search rankings and increasing organic traffic through modern SEO strategies.",
+      icon: <Search size={22} />,
+      color: "from-blue-600 to-cyan-500",
+    },
+    {
+      title: "Social Media Marketing",
+      desc: "Building strong brand presence and audience engagement across platforms.",
+      icon: <MessageCircle size={22} />,
+      color: "from-cyan-500 to-blue-700",
+    },
+    {
+      title: "Content Strategy",
+      desc: "Creating compelling content that converts visitors into loyal customers.",
+      icon: <Target size={22} />,
+      color: "from-indigo-500 to-blue-600",
+    },
+    {
+      title: "Analytics & Growth",
+      desc: "Tracking performance and improving ROI with smart data-driven decisions.",
+      icon: <BarChart3 size={22} />,
+      color: "from-blue-500 to-cyan-400",
+    },
   ];
 
   return (
-    <section id="about" className=" bg-gray-50">
-      <div className="max-w-7xl mx-auto px-8">
+    <section
+      id="about"
+      className="py-24 bg-black text-white relative overflow-hidden"
+    >
+      {/* Glow Background */}
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/20 blur-[150px] rounded-full"></div>
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
           
-          {/* Left Side: Professional Bio */}
-          <div className="space-y-8">
-            <div>
-              <h2 className="text-blue-600 font-bold tracking-widest uppercase mb-2">My Story</h2>
-              <h3 className="text-5xl font-black text-black leading-tight">
-                Zahid Hussain — <br />
-                <span className="text-gray-400">Driving Results in the</span> Digital World.
-              </h3>
+          {/* LEFT CONTENT */}
+          <div>
+            
+            {/* Badge */}
+            <div className="inline-flex items-center px-5 py-2 rounded-full bg-white/5 border border-white/10 text-blue-400 text-sm font-semibold mb-6">
+              About Me
             </div>
 
-            <p className="text-lg text-black leading-relaxed">
-            I am a passionate Digital Marketing Specialist dedicated to helping businesses grow and succeed online. My focus is not just on driving traffic, but on reaching the right audience and converting them into loyal customers. I have developed result-driven strategies for multiple brands, helping them significantly increase their sales and strengthen their online presence by up to 10x.
+            {/* Heading */}
+            <h2 className="text-5xl lg:text-6xl font-extrabold leading-tight">
+              Passionate About
+              <span className="block bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+                Digital Growth
+              </span>
+            </h2>
+
+            {/* Description */}
+            <p className="mt-8 text-gray-400 text-lg leading-relaxed">
+              I help businesses grow online through powerful marketing strategies,
+              SEO optimization, branding, and performance-driven campaigns.
             </p>
 
-            {/* Core Competencies Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {skills.map((skill, index) => (
-                <div key={index} className={`p-6 bg-white rounded-2xl hover:transform hover:scale-105 border-l-4 duration-300 ${skill.color} shadow-sm hover:shadow-md transition-transform`}>
-                  <h4 className="font-black text-black mb-2 uppercase text-sm tracking-tighter">{skill.title}</h4>
-                  <p className="text-xs text-gray-500">{skill.desc}</p>
+            {/* Skill Cards */}
+            <div className="grid sm:grid-cols-2 gap-6 mt-12">
+              
+              {skills.map((item, index) => (
+                <div
+                  key={index}
+                  className="group relative p-6 rounded-[28px] bg-white/5 border border-white/10 backdrop-blur-xl hover:-translate-y-2 hover:border-blue-500/40 transition-all duration-500"
+                >
+                  
+                  {/* Glow */}
+                  <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-br ${item.color} transition duration-500 rounded-[28px]`}></div>
+
+                  {/* Icon */}
+                  <div
+                    className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 bg-gradient-to-br ${item.color} shadow-lg`}
+                  >
+                    {item.icon}
+                  </div>
+
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-blue-400 transition">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right Side: Decorative Stats & Image Area */}
+          {/* RIGHT SIDE */}
           <div className="relative">
-            {/* Background Shape */}
-            <div className="absolute top-10 right-10 w-full h-full bg-blue-600 rounded-3xl -z-10 opacity-10 rotate-3"></div>
             
-            <div className="bg-black p-10 rounded-3xl text-white shadow-2xl relative overflow-hidden">
-              {/* Abstract Design Element */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-400 rounded-bl-full opacity-20"></div>
+            {/* Glow */}
+            <div className="absolute inset-0 bg-blue-600/20 blur-[140px] rounded-full"></div>
 
-              <h4 className="text-2xl font-black mb-6">Why Work With Me?</h4>
+            <div className="relative bg-white/5 border border-white/10 backdrop-blur-xl rounded-[40px] p-10 lg:p-14 shadow-2xl">
               
-              <ul className="space-y-6">
-                <li className="flex items-start space-x-4">
-                  <div className="bg-yellow-400 text-black p-2 rounded-lg">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
-                  </div>
-                  <div>
-                    <span className="block font-bold text-lg">Data-Driven Approach</span>
-                    <span className="text-gray-400 text-sm">Every strategy is built on real data, analytics, and in-depth market research..</span>
-                  </div>
-                </li>
+              {/* Title */}
+              <h3 className="text-4xl font-extrabold mb-10">
+                Why Choose Me?
+              </h3>
 
-                <li className="flex items-start space-x-4">
-                  <div className="bg-blue-500 text-white p-2 rounded-lg">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              {/* FEATURES */}
+              <div className="space-y-8">
+                
+                {/* Feature */}
+                <div className="flex gap-5">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-yellow-400 to-orange-500 text-black flex items-center justify-center">
+                    <Zap size={20} />
                   </div>
-                  <div>
-                    <span className="block font-bold text-lg">Fast Execution</span>
-                    <span className="text-gray-400 text-sm">My priority is to set up campaigns efficiently and continuously monitor their performance to achieve the best possible results.</span>
-                  </div>
-                </li>
 
-                <li className="flex items-start space-x-4">
-                  <div className="bg-white text-black p-2 rounded-lg">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  </div>
                   <div>
-                    <span className="block font-bold text-lg">24/7 Support</span>
-                    <span className="text-gray-400 text-sm">Professional communication and availability to guide you at all times.</span>
+                    <h4 className="text-xl font-bold mb-2">
+                      Data-Driven Strategy
+                    </h4>
+                    <p className="text-gray-400">
+                      Every decision is based on real analytics and insights.
+                    </p>
                   </div>
-                </li>
-              </ul>
-
-              <div className="mt-10 pt-10 border-t border-gray-800 flex justify-between items-center">
-                <div>
-                  <p className="text-4xl font-black text-yellow-400">95%</p>
-                  <p className="text-xs text-gray-400 uppercase tracking-widest">Success Rate</p>
                 </div>
+
+                {/* Feature */}
+                <div className="flex gap-5">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center">
+                    <TrendingUp size={20} />
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">
+                      Fast Execution
+                    </h4>
+                    <p className="text-gray-400">
+                      Quick and efficient campaign delivery for fast results.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Feature */}
+                <div className="flex gap-5">
+                  <div className="w-12 h-12 rounded-xl bg-white text-black flex items-center justify-center">
+                    <MessageCircle size={20} />
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-bold mb-2">
+                      Dedicated Support
+                    </h4>
+                    <p className="text-gray-400">
+                      24/7 professional communication and support.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* STATS */}
+              <div className="grid grid-cols-2 gap-8 mt-14 pt-10 border-t border-white/10">
+                
                 <div>
-                  <p className="text-4xl font-black text-blue-400">150+</p>
-                  <p className="text-xs text-gray-400 uppercase tracking-widest">Projects Done</p>
+                  <h3 className="text-5xl font-extrabold text-blue-400">
+                    95%
+                  </h3>
+                  <p className="text-gray-400 text-sm uppercase tracking-widest mt-2">
+                    Success Rate
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-5xl font-extrabold text-cyan-400">
+                    150+
+                  </h3>
+                  <p className="text-gray-400 text-sm uppercase tracking-widest mt-2">
+                    Projects Done
+                  </p>
                 </div>
               </div>
             </div>
