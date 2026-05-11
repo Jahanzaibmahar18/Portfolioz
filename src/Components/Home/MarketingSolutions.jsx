@@ -49,23 +49,23 @@ const MarketingSolutions = () => {
   ];
 
   return (
-    <div className="bg-white py-24 px-8 overflow-hidden">
+    <div className="bg-white py-24 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-8">
           <div className="max-w-2xl group">
             <h2 className="text-blue-600 font-bold tracking-[0.2em] uppercase mb-4 flex items-center">
               <span className="w-12 h-0.5 bg-blue-600 mr-4 transition-all group-hover:w-20"></span> 
               Our Expertise
             </h2>
-            <h3 className="text-5xl md:text-6xl font-black text-black leading-none tracking-tighter">
+            <h3 className="text-5xl gap-6 md:text-6xl  font-black text-black leading-[1.2]  ">
               Strategic Solutions <br />
               <span className="text-blue-600">to Scale Your Business.</span>
             </h3>
           </div>
           <div className="pb-2">
-            <p className="text-gray-400 font-medium max-w-xs border-l-4 border-yellow-400 pl-6 leading-relaxed italic">
+            <p className="text-gray-400 font-medium max-w-xs border-l-4 mb-10 mr-15 border-yellow-400 pl-6 leading-relaxed italic hover:text-blue-600 transition-colors duration-300 ">
               "Digital marketing is no longer about the stuff you make, but the stories you tell."
             </p>
           </div>
@@ -82,7 +82,7 @@ const MarketingSolutions = () => {
               <div className={`absolute inset-0 opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500 ${item.accent}`}></div>
               
               {/* Floating Icon Container */}
-              <div className={`w-20 h-20 rounded-2xl bg-gray-50 flex items-center justify-center mb-10 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-black group-hover:text-white text-gray-700`}>
+              <div className={`w-20 h-20 rounded-2xl bg-gray-50 flex items-center justify-center mb-10 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 group-hover:bg-yellow-400 group-hover:text-black text-gray-700`}>
                 {item.icon}
               </div>
               
@@ -95,7 +95,7 @@ const MarketingSolutions = () => {
               </p>
               
               {/* Animated Button Link */}
-              <div className="flex items-center text-sm font-black uppercase tracking-widest text-black group-hover:text-blue-600 transition-all cursor-pointer">
+              <div className="flex items-center text-sm font-black uppercase tracking-widest text-black group-hover:text-yellow-400 transition-all cursor-pointer">
                 <span className="relative overflow-hidden inline-block">
                   <span className="inline-block transition-transform duration-300 group-hover:-translate-y-full">Explore More</span>
                   <span className="absolute top-full left-0 inline-block transition-transform duration-300 group-hover:-translate-y-full">Explore More</span>
@@ -109,7 +109,7 @@ const MarketingSolutions = () => {
         </div>
 
         {/* Professional Metrics Bar */}
-        <div className="mt-24 p-12 bg-black rounded-[3rem] grid grid-cols-1 md:grid-cols-3 gap-12 relative shadow-2xl shadow-blue-100">
+        <div className="mt-10 p-12 bg-black rounded-[3rem] grid grid-cols-1 md:grid-cols-3 gap-12 relative shadow-2xl shadow-blue-100">
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full blur-[120px] opacity-20 -mr-32 -mt-32"></div>
           
           <div className="text-center relative z-10 border-b md:border-b-0 md:border-r border-gray-800 pb-8 md:pb-0">

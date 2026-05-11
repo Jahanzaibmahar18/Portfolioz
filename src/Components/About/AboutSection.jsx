@@ -2,14 +2,14 @@ import React from 'react';
 
 const AboutSection = () => {
   const skills = [
-    { title: 'Search Engine Optimization', desc: 'Google ranking aur organic traffic barhanay mein maharat.', color: 'border-blue-600' },
-    { title: 'Social Media Marketing', desc: 'Facebook, Instagram aur LinkedIn ads ke zariye brand building.', color: 'border-yellow-400' },
-    { title: 'Content Strategy', desc: 'Aisa content jo audience ko engage kary aur sales generate kary.', color: 'border-black' },
-    { title: 'Data Analytics', desc: 'Campaign performance ko track karna aur ROI ko improve karna.', color: 'border-blue-400' }
+    { title: 'Search Engine Optimization', desc: 'Expertise in improving Google rankings and increasing organic traffic.', color: 'border-blue-400' },
+    { title: 'Social Media Marketing', desc: 'Strategies for building brand awareness and engaging with audiences on social platforms.', color: 'border-yellow-400' },
+    { title: 'Content Strategy', desc: 'Creating compelling content that resonates with the target audience and drives conversions.', color: 'border-yellow-400' },
+    { title: 'Data Analytics', desc: 'Analyzing campaign performance and optimizing strategies for improved ROI.', color: 'border-blue-400' }
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className=" bg-gray-50">
       <div className="max-w-7xl mx-auto px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -24,16 +24,14 @@ const AboutSection = () => {
               </h3>
             </div>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Main aik passionate digital marketing specialist hoon jo businesses ko online grow karne mein help karta hai. 
-              Mera maqsad sirf traffic lana nahi, balkay sahi audience tak pohanch kar unhein loyal customers mein tabdeel karna hai. 
-              Maine kai brands ke liye aisi strategies design ki hain jo unki sales aur online presence ko 10x tak le gayi hain.
+            <p className="text-lg text-black leading-relaxed">
+            I am a passionate Digital Marketing Specialist dedicated to helping businesses grow and succeed online. My focus is not just on driving traffic, but on reaching the right audience and converting them into loyal customers. I have developed result-driven strategies for multiple brands, helping them significantly increase their sales and strengthen their online presence by up to 10x.
             </p>
 
             {/* Core Competencies Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {skills.map((skill, index) => (
-                <div key={index} className={`p-6 bg-white border-l-4 ${skill.color} shadow-sm hover:shadow-md transition-shadow`}>
+                <div key={index} className={`p-6 bg-white rounded-2xl hover:transform hover:scale-105 border-l-4 duration-300 ${skill.color} shadow-sm hover:shadow-md transition-transform`}>
                   <h4 className="font-black text-black mb-2 uppercase text-sm tracking-tighter">{skill.title}</h4>
                   <p className="text-xs text-gray-500">{skill.desc}</p>
                 </div>
@@ -59,7 +57,7 @@ const AboutSection = () => {
                   </div>
                   <div>
                     <span className="block font-bold text-lg">Data-Driven Approach</span>
-                    <span className="text-gray-400 text-sm">Har strategy real numbers aur market research par base hoti hai.</span>
+                    <span className="text-gray-400 text-sm">Every strategy is built on real data, analytics, and in-depth market research..</span>
                   </div>
                 </li>
 
@@ -69,7 +67,7 @@ const AboutSection = () => {
                   </div>
                   <div>
                     <span className="block font-bold text-lg">Fast Execution</span>
-                    <span className="text-gray-400 text-sm">Campaigns ko tezi se setup karna aur results ko monitor karna meri priority hai.</span>
+                    <span className="text-gray-400 text-sm">My priority is to set up campaigns efficiently and continuously monitor their performance to achieve the best possible results.</span>
                   </div>
                 </li>
 
@@ -79,7 +77,7 @@ const AboutSection = () => {
                   </div>
                   <div>
                     <span className="block font-bold text-lg">24/7 Support</span>
-                    <span className="text-gray-400 text-sm">Professional communication aur har waqt guide karne ke liye tayyar.</span>
+                    <span className="text-gray-400 text-sm">Professional communication and availability to guide you at all times.</span>
                   </div>
                 </li>
               </ul>
