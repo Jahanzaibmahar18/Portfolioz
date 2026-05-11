@@ -58,7 +58,7 @@ const Hero = () => {
 
         {/* Right Content - Visual Representation */}
         <div className="relative group lg:block hidden">
-          <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
+          <div className="absolute inset-0 bg-linear-to-tr from-blue-600 to-purple-600 rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
           
           <div className="relative bg-[#151515] border border-white/5 rounded-[3rem] p-4 shadow-2xl overflow-hidden">
             {/* Fake UI Element for Professional Look */}
