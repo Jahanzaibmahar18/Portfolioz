@@ -1,61 +1,101 @@
-import React, { useState } from 'react';
-
-// === IMPORT SECTION ===
-// Yahan aap apni local files import kar sakte hain:
-// import ProjectVid1 from '../../assets/videos/vid1.mp4';
-// import ProjectImg1 from '../../assets/images/img1.jpg';
+import React, { useState } from "react";
+import { ExternalLink, Play, X } from "lucide-react";
 
 const MyProjects = () => {
   const [selectedItem, setSelectedItem] = useState(null);
 
-  // --- Local Data Arrays (Aap yahan apne imported variables dalein) ---
-  const videoData = [
-    { url: "https://www.w3schools.com/html/mov_bbb.mp4", tag: "Consulting", color: "bg-blue-600", title: "The Givers Consultancy - Growth Strategy" },
-    { url: "https://www.w3schools.com/html/movie.mp4", tag: "Law Services", color: "bg-cyan-600", title: "AL KHALDI - Firm & Legal Consultations" },
-    { url: "https://www.w3schools.com/html/mov_bbb.mp4", tag: "Clothing Brand", color: "bg-purple-600", title: "Laundry Garment Care - E-commerce" },
+  // ================= PROJECT DATA =================
+  const projects = [
+    {
+      type: "video",
+      url: "https://www.w3schools.com/html/mov_bbb.mp4",
+      tag: "Consulting",
+      color: "from-cyan-500 to-blue-600",
+      title: "The Givers Consultancy",
+      description: "Premium growth strategy and consulting platform.",
+    },
+
+    {
+      type: "video",
+      url: "https://www.w3schools.com/html/movie.mp4",
+      tag: "Legal",
+      color: "from-purple-500 to-pink-600",
+      title: "AL KHALDI Law Firm",
+      description: "Professional legal consultation experience.",
+    },
+
+    {
+      type: "image",
+      url: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200",
+      tag: "Marketing",
+      color: "from-orange-500 to-red-500",
+      title: "Social Media Campaign",
+      description: "Digital domination through modern branding.",
+    },
+
+    {
+      type: "image",
+      url: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1200",
+      tag: "UI/UX",
+      color: "from-indigo-500 to-cyan-500",
+      title: "E-commerce Dashboard",
+      description: "Luxury shopping experience with clean UI.",
+    },
+
+    {
+      type: "image",
+      url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1200",
+      tag: "Analytics",
+      color: "from-green-500 to-emerald-600",
+      title: "Business Analytics",
+      description: "Real-time performance tracking solutions.",
+    },
+
+    {
+      type: "video",
+      url: "https://www.w3schools.com/html/mov_bbb.mp4",
+      tag: "Branding",
+      color: "from-blue-500 to-cyan-500",
+      title: "Luxury Fashion Brand",
+      description: "Modern e-commerce branding experience.",
+    },
   ];
 
-  const imageData = [
-    { url: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200", tag: "Marketing", color: "bg-teal-600", title: "Social Media Domination Campaign" },
-    { url: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1200", tag: "Development", color: "bg-indigo-600", title: "Premium E-commerce UI/UX Design" },
-    { url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1200", tag: "Analytics", color: "bg-orange-600", title: "Data-Driven Business Scaling" },
-  ];
-
-  // === Modal / Lightbox Component ===
+  // ================= LIGHTBOX =================
   const Lightbox = () => {
     if (!selectedItem) return null;
 
     return (
-      <div 
-        className="fixed inset-0 w-full h-full bg-black/60 backdrop-blur-xl z-[999] flex items-center justify-center p-4 md:p-10 transition-all duration-500"
+      <div
         onClick={() => setSelectedItem(null)}
+        className="fixed inset-0 z-[999] bg-black/80 backdrop-blur-2xl flex items-center justify-center p-5"
       >
-        {/* Modal Container */}
-        <div 
-          className="relative w-full max-w-5xl bg-[#0a0a0a] rounded-3xl border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden transform transition-all scale-100"
-          onClick={(e) => e.stopPropagation()} 
+        <div
+          onClick={(e) => e.stopPropagation()}
+          className="relative w-full max-w-6xl rounded-[40px] overflow-hidden border border-white/10 bg-[#0b1120] shadow-2xl animate-[fadeIn_.4s_ease]"
         >
-          {/* Close Button */}
-          <button 
-            className="absolute top-5 right-5 z-[1001] bg-white/10 hover:bg-white/20 text-white w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-md transition-all"
+          {/* Close */}
+          <button
             onClick={() => setSelectedItem(null)}
+            className="absolute top-5 right-5 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-xl transition-all"
           >
-            ✕
+            <X size={22} />
           </button>
-          
-          <div className="w-full h-full flex items-center justify-center bg-black">
-            {selectedItem.type === 'video' ? (
-              <video 
-                src={selectedItem.url} 
-                controls 
-                autoPlay 
-                className="w-full max-h-[85vh] object-contain"
+
+          {/* Content */}
+          <div className="w-full h-full bg-black flex items-center justify-center">
+            {selectedItem.type === "video" ? (
+              <video
+                src={selectedItem.url}
+                controls
+                autoPlay
+                className="w-full max-h-[90vh] object-contain"
               />
             ) : (
-              <img 
-                src={selectedItem.url} 
-                alt="Project Detail" 
-                className="w-full max-h-[85vh] object-contain shadow-2xl"
+              <img
+                src={selectedItem.url}
+                alt="project"
+                className="w-full max-h-[90vh] object-contain"
               />
             )}
           </div>
@@ -64,90 +104,120 @@ const MyProjects = () => {
     );
   };
 
-  const ProjectCard = ({ children, onClick, tagText, tagColor, title }) => (
-    <div 
-      className="bg-[#111111]/90 border border-white/5 rounded-[2.5rem] p-4 flex flex-col justify-between items-start transition-all duration-500 hover:border-cyan-500/40 group cursor-pointer"
-      onClick={onClick}
-    >
-      <div className="relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden mb-5 shadow-2xl">
-        {children}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
-        <div className={`absolute top-5 left-5 ${tagColor} text-[10px] uppercase tracking-[0.2em] font-black px-5 py-2.5 rounded-full shadow-xl text-white`}>
-          {tagText}
-        </div>
-      </div>
-      
-      <div className="w-full px-2 pb-2">
-        <h3 className="text-white text-xl md:text-2xl font-black leading-tight group-hover:text-cyan-400 transition-colors mb-5 italic uppercase tracking-tighter">
-          {title}
-        </h3>
-        <div className="inline-flex items-center gap-3 text-cyan-500 text-xs font-black uppercase tracking-[0.3em] group-hover:text-white transition-all">
-          View Project 
-          <span className="text-xl transform transition-transform group-hover:translate-x-2 group-hover:-translate-y-1">
-            ↗
-          </span>
-        </div>
-      </div>
-    </div>
-  );
-
+  // ================= MAIN =================
   return (
-    <section id="projects" className="bg-[#050505] min-h-screen py-24 px-6 relative overflow-hidden">
-      {/* Dynamic Background Glows */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-cyan-600/10 rounded-full blur-[150px] pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none"></div>
+    <section
+      id="projects"
+      className="relative py-32 px-6 md:px-10 bg-[#050816] overflow-hidden"
+    >
+      {/* Background Glow */}
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[140px]"></div>
 
-      <div className="max-w-7xl mx-auto z-10 relative">
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[140px]"></div>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
+
+        {/* Heading */}
         <div className="text-center mb-24">
-          <h2 className="text-white text-6xl md:text-8xl font-black tracking-tighter mb-8 italic uppercase leading-none">
-            Selected <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Works</span>
+          <p className="text-cyan-400 uppercase tracking-[0.4em] text-sm font-bold mb-5">
+            Portfolio Showcase
+          </p>
+
+          <h2 className="text-5xl md:text-7xl font-black text-white tracking-tight leading-none">
+            Selected
+            <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              Projects
+            </span>
           </h2>
-          <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto font-bold uppercase tracking-widest">
-            Scaling Brands through Digital Excellence
+
+          <p className="text-gray-400 max-w-2xl mx-auto mt-8 text-lg leading-relaxed">
+            A collection of premium digital experiences crafted for
+            ambitious brands and businesses worldwide.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {/* Video Projects */}
-          {videoData.map((v, i) => (
-            <ProjectCard 
-              key={`vid-${i}`} 
-              onClick={() => setSelectedItem({ type: 'video', url: v.url })} 
-              tagText={v.tag} 
-              tagColor={v.color} 
-              title={v.title}
-            >
-              <video 
-                src={v.url} 
-                muted 
-                loop 
-                onMouseOver={e => e.target.play()}
-                onMouseOut={e => e.target.pause()}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" 
-              />
-            </ProjectCard>
-          ))}
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 
-          {/* Image Projects */}
-          {imageData.map((img, i) => (
-            <ProjectCard 
-              key={`img-${i}`} 
-              onClick={() => setSelectedItem({ type: 'image', url: img.url })} 
-              tagText={img.tag} 
-              tagColor={img.color} 
-              title={img.title}
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              onClick={() => setSelectedItem(project)}
+              className="group relative bg-white/5 border border-white/10 backdrop-blur-xl rounded-[32px] overflow-hidden cursor-pointer hover:-translate-y-3 transition-all duration-700"
             >
-              <img 
-                src={img.url} 
-                alt="project" 
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" 
-              />
-            </ProjectCard>
+              {/* Media */}
+              <div className="relative aspect-[4/3] overflow-hidden">
+
+                {project.type === "video" ? (
+                  <video
+                    src={project.url}
+                    muted
+                    loop
+                    onMouseEnter={(e) => e.target.play()}
+                    onMouseLeave={(e) => {
+                      e.target.pause();
+                      e.target.currentTime = 0;
+                    }}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                  />
+                ) : (
+                  <img
+                    src={project.url}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                  />
+                )}
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
+                {/* Tag */}
+                <div
+                  className={`absolute top-5 left-5 bg-gradient-to-r ${project.color} px-4 py-2 rounded-full text-white text-xs uppercase tracking-[0.25em] font-bold shadow-xl`}
+                >
+                  {project.tag}
+                </div>
+
+                {/* Play Icon */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                  <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center">
+                    {project.type === "video" ? (
+                      <Play className="text-white ml-1" size={32} />
+                    ) : (
+                      <ExternalLink className="text-white" size={30} />
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-7 space-y-4">
+
+                <h3 className="text-2xl font-black text-white group-hover:text-cyan-400 transition-colors">
+                  {project.title}
+                </h3>
+
+                <p className="text-gray-400 leading-relaxed text-sm">
+                  {project.description}
+                </p>
+
+                <div className="flex items-center gap-3 text-cyan-400 uppercase tracking-[0.3em] text-xs font-bold pt-2">
+                  View Project
+                  <ExternalLink
+                    size={16}
+                    className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
+                  />
+                </div>
+              </div>
+
+              {/* Border Glow */}
+              <div className="absolute inset-0 rounded-[32px] border border-cyan-400/0 group-hover:border-cyan-400/30 transition-all duration-500"></div>
+            </div>
           ))}
         </div>
       </div>
 
-      {/* Fullscreen Blur Lightbox */}
+      {/* Modal */}
       <Lightbox />
     </section>
   );
