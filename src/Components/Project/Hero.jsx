@@ -3,8 +3,7 @@ import { ArrowRight, Sparkles, Trophy, Users } from 'lucide-react';
 
 const Hero = () => {
   return (
-    // w-full aur overflow-x-hidden se width full ho jayegi
-    <section className="relative min-h-screen w-full bg-[#0a0a0a] flex items-center justify-center overflow-hidden px-4 md:px-10 lg:px-20 pt-20">
+    <section className="relative h-full  w-full bg-[#0a0a0a] flex items-center justify-center overflow-hidden px- md:px-10 lg:px-20 pt-20">
       
       {/* Background Decorative Elements */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-blue-600/20 rounded-full blur-[120px] animate-pulse"></div>
@@ -59,8 +58,8 @@ const Hero = () => {
         </div>
 
         {/* Right Content - Visual Representation */}
-        <div className="relative group lg:block hidden w-full">
-          <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
+        <div className="relative group lg:block hidden w-full mb-10">
+          <div className="absolute inset-0 bg-linear-to-tr from-blue-600 to-purple-600 rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
           
           {/* Card container ko w-full kiya hai */}
           <div className="relative bg-[#151515] border border-white/5 rounded-[3rem] p-6 shadow-2xl overflow-hidden w-full max-w-xl ml-auto">

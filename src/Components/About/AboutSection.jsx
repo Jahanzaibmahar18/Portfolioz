@@ -39,7 +39,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="py-24 bg-black text-white relative overflow-hidden"
+      className="py-4 bg-black text-white relative overflow-hidden"
     >
       {/* Glow Background */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/20 blur-[150px] rounded-full"></div>

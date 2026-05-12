@@ -3,7 +3,7 @@ import zahid from "../../assets/zahid.png";
 
 const HomeHero = () => {
   return (
-    <section className="min-h-screen bg-black text-white overflow-hidden flex items-center relative">
+    <section className="h-full bg-black text-white overflow-hidden flex items-center relative">
       
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/20 blur-[150px] rounded-full"></div>
@@ -50,10 +50,10 @@ const HomeHero = () => {
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-12">
             
             {[
-              "SEO Expert",
-              "Social Media",
+              "Account Manager",
+              "Marketing Expert",
               "AI Content Creator",
-              "Brand Strategy",
+              "Linkedin Expert",
             ].map((item, index) => (
               <span
                 key={index}
@@ -81,7 +81,7 @@ const HomeHero = () => {
             />
 
             {/* Experience Card */}
-            <div className="absolute -bottom-6 -left-6 bg-white text-black px-6 py-4 rounded-2xl shadow-2xl">
+            <div className="absolute -bottom-6 -left-6 hover:shadow-blue-500/30 hover:transform hover:scale-105 duration-300 bg-white text-black px-6 py-4 rounded-2xl shadow-2xl">
               
               <h3 className="text-3xl font-extrabold text-blue-600">
                 3+
@@ -93,7 +93,7 @@ const HomeHero = () => {
             </div>
 
             {/* Clients Card */}
-            <div className="absolute -top-6 -right-6 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-4 rounded-2xl shadow-2xl">
+            {/* <div className="absolute -top-6 -right-6 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-4 rounded-2xl shadow-2xl">
               
               <h3 className="text-3xl font-extrabold">
                 100+
@@ -102,7 +102,7 @@ const HomeHero = () => {
               <p className="text-sm text-white/80">
                 Happy Clients
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

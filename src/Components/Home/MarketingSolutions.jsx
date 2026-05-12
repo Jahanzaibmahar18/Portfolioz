@@ -47,14 +47,14 @@ const MarketingSolutions = () => {
     <section className="bg-black text-white py-24 overflow-hidden relative">
       
       {/* Background Glow */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/10 blur-[140px] rounded-full"></div>
+      <div className="absolute top-0 left-0 w-125 h-125 bg-blue-600/10 blur-[140px] rounded-full"></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         
         {/* HEADER */}
-        <div className="text-center max-w-4xl mx-auto mb-20">
+        <div className="text-center max-w-4xl mx-auto mb-10">
           
-          <span className="inline-flex items-center px-5 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl text-blue-400 text-sm font-semibold mb-6">
+          <span className="inline-flex items-center  rounded-full bg-white/5 border border-white/10 backdrop-blur-xl text-blue-400 text-sm font-semibold ">
             Our Expertise
           </span>
 
