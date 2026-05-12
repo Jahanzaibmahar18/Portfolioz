@@ -3,9 +3,12 @@ import Navbar from "./Components/Common/Navbar";
 import Home from "./Components/Pages/Home";
 import AboutSection from "./Components/Pages/About";
 import Services from "./Components/Pages/Services";
+
+
 import Contact from "./Components/Pages/Contect";
 import Project from "./Components/Pages/Project";
 import Footer from "./Components/Common/Footer";
+
 
 const App = () => {
   return (
@@ -29,19 +32,29 @@ const App = () => {
         <Services />
       </section>
 
+
       {/* PROJECTS */}
       <section id="projects" className="scroll-mt-24">
         <Project />
       </section>
 
+       {/* SERVICES */}
+      <section id="projects" className="scroll-mt-24">
+        <Project/>
+      </section>
+      
+
       {/* CONTACT */}
       <section id="contact" className="scroll-mt-24">
-        <Contact />
+        <Contact/>
       </section>
 
-      {/* FOOTER */}
-      <Footer />
+      <Footer/>
 
+     
+
+
+     
     </div>
   );
 };
