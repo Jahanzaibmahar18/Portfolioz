@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import mar1 from '../../assets/mar1.png';
 import mar2 from '../../assets/mar2.png';
 import mar3 from '../../assets/mar3.png';
-import React, { useState } from "react";
 import { ExternalLink, Play, X } from "lucide-react";
 
 const MyProjects = () => {
@@ -192,48 +191,6 @@ const MyProjects = () => {
     },
   ];
 
-  // ================= LIGHTBOX =================
-  const Lightbox = () => {
-    if (!selectedItem) return null;
-
-    return (
-      <div
-        onClick={() => setSelectedItem(null)}
-        className="fixed inset-0 z-[999] bg-black/80 backdrop-blur-2xl flex items-center justify-center p-5"
-      >
-        <div
-          onClick={(e) => e.stopPropagation()}
-          className="relative w-full max-w-6xl rounded-[40px] overflow-hidden border border-white/10 bg-[#0b1120] shadow-2xl animate-[fadeIn_.4s_ease]"
-        >
-          {/* Close */}
-          <button
-            onClick={() => setSelectedItem(null)}
-            className="absolute top-5 right-5 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-xl transition-all"
-          >
-            <X size={22} />
-          </button>
-
-          {/* Content */}
-          <div className="w-full h-full bg-black flex items-center justify-center">
-            {selectedItem.type === "video" ? (
-              <video
-                src={selectedItem.url}
-                controls
-                autoPlay
-                className="w-full max-h-[90vh] object-contain"
-              />
-            ) : (
-              <img
-                src={selectedItem.url}
-                alt="project"
-                className="w-full max-h-[90vh] object-contain"
-              />
-            )}
-          </div>
-        </div>
-      </div>
-    );
-  };
 
   // ================= MAIN =================
   return (

@@ -28,7 +28,7 @@ const Contact = () => {
             Get In <span className="text-blue-500">Touch</span>
           </h2>
           <p className="text-gray-400 mt-4">
-            Let’s build something amazing together 🚀
+            Let’s build something amazing together 
           </p>
         </div>
 
@@ -44,7 +44,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-bold text-lg">Email</h4>
-                <p className="text-gray-400">zahid@example.com</p>
+                <p className="text-gray-400">zahidhussain077@gmail.com</p>
               </div>
             </div>
 
@@ -55,7 +55,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-bold text-lg">Phone</h4>
-                <p className="text-gray-400">+92 300 1234567</p>
+                <p className="text-gray-400">+92 316 7160569</p>
               </div>
             </div>
 
@@ -66,7 +66,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-bold text-lg">Location</h4>
-                <p className="text-gray-400">Sindh, Pakistan</p>
+                <p className="text-gray-400">Bahawalpur, Pakistan</p>
               </div>
             </div>
 

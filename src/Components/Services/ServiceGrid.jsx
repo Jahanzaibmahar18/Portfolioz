@@ -42,7 +42,7 @@ const ServiceGrid = () => {
   ];
 
   return (
-    <section className="py-24 bg-black text-white px-6">
+    <section className="py-4 bg-black text-white px-6">
       <div className="max-w-7xl mx-auto">
 
         {/* HEADER */}
@@ -58,10 +58,11 @@ const ServiceGrid = () => {
               <span className="text-yellow-400">Marketing</span>
             </h2>
           </div>
-
+<div className="mt-20 hover:text-white">
           <p className="text-gray-400 max-w-md border-l border-gray-800 pl-6">
             We don’t just run ads — we build scalable revenue systems for modern brands.
           </p>
+          </div>
         </div>
 
         {/* GRID */}
@@ -113,7 +114,7 @@ const ServiceGrid = () => {
         </div>
 
         {/* FOOTER */}
-        <div className="mt-14 text-center text-gray-400">
+        {/* <div className="mt-14 text-center text-gray-400">
           Need a custom solution?{" "}
           <Link to="/contact" className="font-bold text-blue-500 hover:text-yellow-400 transition">
           <span className="text-yellow-400 font-bold cursor-pointer border-b border-yellow-400">
@@ -121,7 +122,7 @@ const ServiceGrid = () => {
           </span>
           </Link>
           
-        </div>
+        </div> */}
 
       </div>
     </section>

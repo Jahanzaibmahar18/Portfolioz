@@ -30,11 +30,11 @@ const Footer = () => {
                 <FaFacebookF size={20} className="text-gray-400 group-hover:text-white group-hover:rotate-[360deg] transition-all duration-500" />
               </a>
 
-              <a href="#" target="_blank" rel="noreferrer" className="group w-14 h-14 border border-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 hover:border-blue-700 transition-all duration-500 shadow-lg shadow-blue-900/5">
+              <a href="https://www.linkedin.com/in/zahid-hussain-517060385" target="_blank" rel="noreferrer" className="group w-14 h-14 border border-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 hover:border-blue-700 transition-all duration-500 shadow-lg shadow-blue-900/5">
                 <FaLinkedinIn size={20} className="text-gray-400 group-hover:text-white group-hover:rotate-[360deg] transition-all duration-500" />
               </a>
 
-              <a href="#" target="_blank" rel="noreferrer" className="group w-14 h-14 border border-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 hover:border-pink-600 transition-all duration-500 shadow-lg shadow-pink-900/5">
+              <a href="https://www.instagram.com/digim_maxx/" target="_blank" rel="noreferrer" className="group w-14 h-14 border border-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 hover:border-pink-600 transition-all duration-500 shadow-lg shadow-pink-900/5">
                 <FaInstagram size={20} className="text-gray-400 group-hover:text-white group-hover:rotate-[360deg] transition-all duration-500" />
               </a>
 

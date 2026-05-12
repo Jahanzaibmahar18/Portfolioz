@@ -44,7 +44,7 @@ const MarketingSolutions = () => {
   ];
 
   return (
-    <section className="bg-black text-white py-24 overflow-hidden relative">
+    <section className="bg-black text-white py-5 overflow-hidden relative">
       
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-125 h-125 bg-blue-600/10 blur-[140px] rounded-full"></div>
@@ -54,13 +54,13 @@ const MarketingSolutions = () => {
         {/* HEADER */}
         <div className="text-center max-w-4xl mx-auto mb-10">
           
-          <span className="inline-flex items-center  rounded-full bg-white/5 border border-white/10 backdrop-blur-xl text-blue-400 text-sm font-semibold ">
+          <span className="inline-flex items-center rounded-full bg-white/5 border border-white/10 backdrop-blur-xl text-blue-400 text-sm font-semibold ">
             Our Expertise
           </span>
 
           <h2 className="text-5xl lg:text-6xl font-extrabold leading-tight">
             Strategic Marketing
-            <span className="block bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
               Solutions
             </span>
           </h2>

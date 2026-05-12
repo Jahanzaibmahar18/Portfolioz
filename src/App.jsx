@@ -8,7 +8,7 @@ import Services from "./Components/Pages/Services";
 import Contact from "./Components/Pages/Contect";
 import Project from "./Components/Pages/Project";
 import Footer from "./Components/Common/Footer";
-
+import WhatsAppButton from "./Components/Common/WhatsAppButton";
 
 const App = () => {
   return (
@@ -38,10 +38,7 @@ const App = () => {
         <Project />
       </section>
 
-       {/* SERVICES */}
-      <section id="projects" className="scroll-mt-24">
-        <Project/>
-      </section>
+     
       
 
       {/* CONTACT */}
@@ -50,7 +47,7 @@ const App = () => {
       </section>
 
       <Footer/>
-
+<WhatsAppButton/>
      
 
 

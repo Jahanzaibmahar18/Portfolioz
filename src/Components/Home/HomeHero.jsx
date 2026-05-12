@@ -1,20 +1,21 @@
 import React from "react";
 import zahid from "../../assets/zahid.png";
+// import { Link } from "lucide-react";
 
 const HomeHero = () => {
   return (
     <section className="h-full bg-black text-white overflow-hidden flex items-center relative">
-      
+
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/20 blur-[150px] rounded-full"></div>
 
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cyan-500/10 blur-[140px] rounded-full"></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24 grid lg:grid-cols-2 gap-20 items-center relative z-10">
-        
+
         {/* LEFT CONTENT */}
         <div className="text-center lg:text-left">
-          
+
           {/* Badge */}
           <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-blue-400 text-sm font-semibold mb-8">
             🚀 Digital Marketing Expert
@@ -36,19 +37,22 @@ const HomeHero = () => {
 
           {/* Buttons */}
           <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-10">
-            
-            <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold shadow-2xl hover:scale-105 hover:shadow-blue-500/30 transition-all duration-300">
-              View Projects
-            </button>
 
-            <button className="px-8 py-4 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-xl hover:bg-white hover:text-black transition-all duration-300 font-semibold">
-              Contact Me
-            </button>
+            <a href="#projects">
+              <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold shadow-2xl hover:scale-105 hover:shadow-blue-500/30 transition-all duration-300">
+                View Projects
+              </button>
+            </a>
+
+            <a href="#contact">
+              <button className="px-8 py-4 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-xl hover:bg-white hover:text-black transition-all duration-300 font-semibold">
+                Contact Me
+              </button>
+            </a>
           </div>
-
           {/* Skills */}
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-12">
-            
+
             {[
               "Account Manager",
               "Marketing Expert",
@@ -67,13 +71,13 @@ const HomeHero = () => {
 
         {/* RIGHT IMAGE */}
         <div className="relative flex justify-center">
-          
+
           {/* Glow */}
           <div className="absolute w-[420px] h-[420px] bg-blue-600/20 blur-[120px] rounded-full"></div>
 
           {/* Image Card */}
           <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-[40px] p-5 shadow-2xl">
-            
+
             <img
               src={zahid}
               alt="Zahid Hussain"
@@ -82,7 +86,7 @@ const HomeHero = () => {
 
             {/* Experience Card */}
             <div className="absolute -bottom-6 -left-6 hover:shadow-blue-500/30 hover:transform hover:scale-105 duration-300 bg-white text-black px-6 py-4 rounded-2xl shadow-2xl">
-              
+
               <h3 className="text-3xl font-extrabold text-blue-600">
                 3+
               </h3>
@@ -92,17 +96,6 @@ const HomeHero = () => {
               </p>
             </div>
 
-            {/* Clients Card */}
-            {/* <div className="absolute -top-6 -right-6 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-4 rounded-2xl shadow-2xl">
-              
-              <h3 className="text-3xl font-extrabold">
-                100+
-              </h3>
-
-              <p className="text-sm text-white/80">
-                Happy Clients
-              </p>
-            </div> */}
           </div>
         </div>
       </div>

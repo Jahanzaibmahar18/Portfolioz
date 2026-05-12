@@ -72,11 +72,11 @@ const LinkedInCase = () => {
     };
 
     return (
-        <section className={`bg-[#0a0a0a] py-4 px-6 transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+        <section className={`bg-[#0a0a0a] py-2 px-2 transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
             <div className="max-w-7xl mx-auto">
                 
                 {/* Minimalist Header */}
-                <div className="relative mb-24">
+                <div className="relative mb-10">
                     {/* <span className="absolute -top-8 left-0 text-cyan-500/20 text-8xl font-black select-none uppercase tracking-tighter">Impact</span> */}
                     <h2 className="relative text-white text-5xl md:text-7xl font-extrabold tracking-tighter leading-none">
                         LINKEDIN <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-600">STRATEGY</span>
