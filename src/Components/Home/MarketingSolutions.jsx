@@ -12,15 +12,15 @@ const MarketingSolutions = () => {
   const services = [
     {
       id: 1,
-      title: "Social Media Strategy",
-      desc: "Creating powerful campaigns that increase engagement, reach, and customer conversions.",
+      title: "Social Media Management",
+      desc: "Managing social media platforms with creative content and strategic campaigns to increase engagement, reach, and customer conversions.",
       icon: <Megaphone size={34} />,
       color: "from-blue-600 to-cyan-500",
     },
 
     {
       id: 2,
-      title: "SEO Optimization",
+      title: "Local SEO ",
       desc: "Helping your business rank higher on search engines with advanced SEO strategies.",
       icon: <Search size={34} />,
       color: "from-cyan-500 to-blue-700",
@@ -28,7 +28,7 @@ const MarketingSolutions = () => {
 
     {
       id: 3,
-      title: "Performance Marketing",
+      title: "Marketing",
       desc: "Scaling businesses through high-performing paid campaigns and ROI-focused marketing.",
       icon: <BarChart3 size={34} />,
       color: "from-indigo-500 to-blue-600",
@@ -36,8 +36,8 @@ const MarketingSolutions = () => {
 
     {
       id: 4,
-      title: "Brand Identity",
-      desc: "Building memorable brand experiences with modern visual and storytelling systems.",
+      title: "Content Planning",
+      desc: "Creating and managing engaging social media content that strengthens brand presence and connects with the target audience.",
       icon: <Palette size={34} />,
       color: "from-blue-500 to-cyan-400",
     },
@@ -133,7 +133,7 @@ const MarketingSolutions = () => {
             {/* STAT */}
             <div>
               <h3 className="text-6xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                500%
+                100%
               </h3>
 
               <p className="mt-3 text-gray-400 uppercase tracking-[0.2em] text-sm font-semibold">
@@ -144,7 +144,7 @@ const MarketingSolutions = () => {
             {/* STAT */}
             <div>
               <h3 className="text-6xl font-extrabold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-                10M+
+                150K+
               </h3>
 
               <p className="mt-3 text-gray-400 uppercase tracking-[0.2em] text-sm font-semibold">

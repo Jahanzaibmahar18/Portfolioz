@@ -35,17 +35,18 @@ const HomeHero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
-            Grow Your
+          <h5 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
+            Scaling Brands with
             <span className="block bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-              Digital Brand
+              Strategy & Creativity
             </span>
-          </h1>
+          </h5>
 
           {/* Description */}
           <p className="mt-8 text-lg text-gray-400 leading-relaxed max-w-2xl">
-            Helping businesses scale online with powerful SEO strategies,
-            social media marketing, branding, and high-converting campaigns.
+            Helping businesses grow online through social media management,
+            content marketing, video editing, and AI-powered digital strategies
+            designed to increase engagement, visibility, and brand growth.
           </p>
 
           {/* Buttons */}
@@ -68,10 +69,10 @@ const HomeHero = () => {
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-12">
 
             {[
-              "Account Manager",
-              "Marketing Expert",
+              "Social Media Manager",
+              "Content Marketer",
+              "Video Editor",
               "AI Content Creator",
-              "Linkedin Expert",
             ].map((item, index) => (
               <span
                 key={index}

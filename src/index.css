@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -13,3 +14,9 @@
   }
 }
 
+html,
+body,
+#root {
+  overflow-x: hidden;
+  width: 100%;
+}

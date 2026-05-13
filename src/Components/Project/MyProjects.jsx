@@ -4,11 +4,7 @@ import mar1 from '../../assets/mar1.png';
 import mar2 from '../../assets/mar2.png';
 import mar3 from '../../assets/mar3.png';
 
-import {
-  ExternalLink,
-  Play,
-  X
-} from "lucide-react";
+import { X } from "lucide-react";
 
 const MyProjects = () => {
 
@@ -18,11 +14,11 @@ const MyProjects = () => {
     {
       type: 'image',
       url: mar1,
-      tag: "Growth",
+      tag: "Start",
       color: "bg-green-600",
-      title: "Account Growth Transformation",
+      title: "Instagram Account Growth & Management",
       tagline: "From Low Visibility to Consistent Audience Growth",
-      desc: "Successfully transformed the Instagram account by improving profile optimization, content consistency, and audience engagement strategy. Achieved significant growth in followers, reach, and overall account activity.",
+      desc: "Managed and optimized the Instagram account through content strategy, audience engagement, and consistent growth-focused management.",
       stats: [
         "Followers Growth",
         "Improved Reach",
@@ -37,11 +33,11 @@ const MyProjects = () => {
     {
       type: 'image',
       url: mar2,
-      tag: "Analytics",
+      tag: "Ending",
       color: "bg-blue-600",
-      title: "Performance Analytics & Insights",
-      tagline: "Tracking Growth Through Real-Time Performance Metrics",
-      desc: "Analyzed Instagram Insights and performance metrics to monitor audience behavior, engagement patterns, content reach, and interaction growth using data-driven reporting.",
+      title: "Instagram Growth Results",
+      tagline: "Achieving Strong Reach, Engagement & Audience Growth",
+      desc: "Successfully improved the account’s overall performance through strategic content management, audience engagement, and consistent growth optimization.",
       stats: [
         "20.3K Views",
         "7.1K Reach",
@@ -56,11 +52,11 @@ const MyProjects = () => {
     {
       type: 'image',
       url: mar3,
-      tag: "Optimization",
+      tag: "Dashboard",
       color: "bg-purple-600",
-      title: "Profile Branding & Optimization",
-      tagline: "Creating a Professional and Scalable Digital Identity",
-      desc: "Enhanced the overall Instagram profile structure by improving branding consistency, visual presentation, and bio optimization to create a professional online presence.",
+      title: "Instagram Dashboard Results",
+      tagline: "Monitoring Monthly Growth & Account Performance",
+      desc: "Showcasing the account’s last month performance results including reach, engagement, profile activity, and overall audience growth through strategic account management.",
       stats: [
         "Optimized Profile",
         "Brand Consistency",
@@ -79,6 +75,7 @@ const MyProjects = () => {
     if (!selectedItem) return null;
 
     return (
+
       <div
         className="fixed inset-0 w-full h-full bg-black/90 backdrop-blur-2xl z-[999] flex items-center justify-center p-4 md:p-10"
         onClick={() => setSelectedItem(null)}
@@ -114,6 +111,7 @@ const MyProjects = () => {
             <p className="text-gray-400 text-sm">
               {selectedItem.tagline}
             </p>
+
           </div>
         </div>
       </div>
@@ -137,26 +135,38 @@ const MyProjects = () => {
         {/* Section Header */}
         <div
           data-aos="fade-up"
-          className="text-center mb-20"
+          className="mb-20"
         >
 
-          <h2 className="text-white text-5xl md:text-7xl font-black tracking-tighter mb-6 italic uppercase leading-none">
+          {/* My Projects */}
+          <h1 className="text-yellow-400 text-4xl md:text-6xl font-black uppercase tracking-tight mb-20">
+            My Projects
+          </h1>
 
-            Instagram
-            <span className="text-cyan-500">
-              {" "}Growth
-            </span>{" "}
-            Case Study
+          {/* Center Content */}
+          <div className="text-center">
 
-          </h2>
+            <h2 className="text-white text-5xl md:text-7xl font-black italic uppercase leading-none mb-6">
 
-          <p className="text-gray-400 text-lg max-w-3xl mx-auto font-medium">
+              Instagram
+              <span className="text-cyan-500">
+                {" "}Account
+              </span>{" "}
+              <span className='text-cyan-500'>
+                Management
+              </span>
+              {" "} & Growth
 
-            Transforming a Low-Engagement Profile into a
-            High-Performance Brand Presence through strategic
-            content planning and data-driven optimization.
+            </h2>
 
-          </p>
+            <p className="text-gray-400 text-lg max-w-3xl mx-auto font-medium leading-relaxed">
+              Turning a low-engagement Instagram profile into a strong and
+              high-performing brand presence through strategic content
+              management, audience engagement, and growth optimization.
+            </p>
+
+          </div>
+
         </div>
 
         {/* Project Cards Grid */}
@@ -185,6 +195,7 @@ const MyProjects = () => {
                 >
                   {item.tag}
                 </div>
+
               </div>
 
               {/* Text Content */}
@@ -213,7 +224,9 @@ const MyProjects = () => {
                     >
                       {stat}
                     </span>
+
                   ))}
+
                 </div>
 
                 {/* Tools Mentioned */}
@@ -239,6 +252,7 @@ const MyProjects = () => {
 
       {/* Lightbox */}
       <Lightbox />
+
     </section>
   );
 };

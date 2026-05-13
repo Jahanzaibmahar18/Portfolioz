@@ -23,25 +23,25 @@ const Adsvideo = () => {
     {
       id: 1,
       url: ads1,
-      category: "Video Marketing",
-      title: "Professional Ad Campaign",
+      category: "Video Editing",
+      title: "Edited product focused visuals for a polished brand look",
       tagline: "High-Impact Video Promotion",
       description:
         "Creative video advertisement focused on engagement, branding, and audience attention.",
       metrics: ["1080p Quality", "Engaging Content", "High Conversion"],
-      btnLabel: "View Campaign",
+      btnLabel: "View Results",
     },
 
     {
       id: 2,
       url: ads2,
-      category: "Digital Advertising",
-      title: "Dynamic Video Showcase",
+      category: "AI Generated Video",
+      title: "I Create Ads That Don’t Just Look Good They Sell",
       tagline: "Modern Marketing Solution",
       description:
         "Professional marketing video designed to improve reach and boost audience interaction.",
       metrics: ["4K Ready", "Creative Strategy", "ROI Focused"],
-      btnLabel: "Explore Strategy",
+      btnLabel: "View Results",
     },
   ];
 

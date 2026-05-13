@@ -21,7 +21,7 @@ const Footer = () => {
               ZAHID <span className="text-blue-600 font-bold">HUSSAIN.</span>
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-sm font-medium">
-              I help ambitious brands dominate the digital landscape through data-backed strategies and creative excellence.
+             I help brands grow online through smart social media management, powerful marketing strategies, engaging video editing, and AI-driven content creation.
             </p>
             
             {/* Social Icons */}
@@ -50,7 +50,7 @@ const Footer = () => {
               <SiGoogleanalytics className="text-blue-600" /> My Services
             </h4>
             <ul className="space-y-4 text-gray-400 font-bold text-sm uppercase tracking-tight">
-              {['SEO Optimization', 'Paid Advertising (PPC)', 'Social Media Strategy', 'Content Marketing', 'Conversion Rate (CRO)'].map((service) => (
+              {['SOCIAL MEDIA MANAGER', 'MARKETING EXPERT', 'VIDEO EDITOR', 'Content Marketing', 'AI CONTENT CREATOR'].map((service) => (
                 <li key={service} className="hover:text-blue-500 cursor-pointer transition-all flex items-center gap-3 group">
                   <span className="w-0 group-hover:w-4 h-[2px] bg-blue-500 transition-all"></span>
                   {service}

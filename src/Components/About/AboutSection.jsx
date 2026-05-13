@@ -12,26 +12,26 @@ const AboutSection = () => {
 
   const skills = [
     {
-      title: "SEO Optimization",
-      desc: "Boosting search rankings and increasing organic traffic through modern SEO strategies.",
+      title: "Social Media Manager",
+      desc: "Managing social media platforms with engaging content strategies to grow audience reach, increase engagement, and build a strong online brand presence.",
       icon: <Search size={22} />,
       color: "from-blue-600 to-cyan-500",
     },
     {
-      title: "Social Media Marketing",
+      title: "Digital Marketing ",
       desc: "Building strong brand presence and audience engagement across platforms.",
       icon: <MessageCircle size={22} />,
       color: "from-cyan-500 to-blue-700",
     },
     {
-      title: "Content Strategy",
-      desc: "Creating compelling content that converts visitors into loyal customers.",
+      title: " AI Content ",
+      desc: "Creating AI-powered content that converts visitors into loyal customers.",
       icon: <Target size={22} />,
       color: "from-indigo-500 to-blue-600",
     },
     {
-      title: "Analytics & Growth",
-      desc: "Tracking performance and improving ROI with smart data-driven decisions.",
+      title: "Video Editing",
+      desc: "Creating compelling video content that engages audiences and drives brand awareness.",
       icon: <BarChart3 size={22} />,
       color: "from-blue-500 to-cyan-400",
     },
@@ -53,29 +53,22 @@ const AboutSection = () => {
           {/* LEFT CONTENT */}
           <div>
 
-            {/* Badge */}
-            <div className="inline-flex items-center px-5 py-2 rounded-full bg-white/5 border border-white/10 text-blue-400 text-sm font-semibold mb-6">
-              About Me
-            </div>
-
-            {/* Heading */}
+            {/* About Heading */}
             <div
               data-aos="fade-up"
               data-aos-anchor-placement="center-center"
             >
-              <h2 className="text-5xl lg:text-6xl font-extrabold leading-tight">
-                Passionate About
-                <span className="block bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-                  Digital Growth
-                </span>
+              <h2 className="text-6xl lg:text-7xl font-extrabold leading-tight text-white">
+                About <span className="text-blue-500">Me</span>
               </h2>
-            </div>
 
-            {/* Description */}
-            <p className="mt-8 text-gray-400 text-lg leading-relaxed">
-              I help businesses grow online through powerful marketing strategies,
-              SEO optimization, branding, and performance-driven campaigns.
-            </p>
+              <p className="mt-8 text-gray-400 text-lg leading-relaxed max-w-2xl">
+                Hi, I’m <span className="text-white font-semibold">Zahid Hussain</span>, 
+                a Social Media Manager, Marketing Expert, Video Editor, and AI Content Creator passionate about helping brands grow their digital presence.
+
+I specialize in social media management, content marketing, audience growth, and high-performing content strategies that increase engagement and build strong brand authority. From video editing to AI-powered content creation, I focus on creating impactful digital experiences that drive real results.
+              </p>
+            </div>
 
             {/* Skill Cards */}
             <div className="grid sm:grid-cols-2 gap-6 mt-12">
@@ -186,7 +179,7 @@ const AboutSection = () => {
 
                 <div>
                   <h3 className="text-5xl font-extrabold text-blue-400">
-                    95%
+                    97%
                   </h3>
 
                   <p className="text-gray-400 text-sm uppercase tracking-widest mt-2">
@@ -196,7 +189,7 @@ const AboutSection = () => {
 
                 <div>
                   <h3 className="text-5xl font-extrabold text-cyan-400">
-                    150+
+                    15+
                   </h3>
 
                   <p className="text-gray-400 text-sm uppercase tracking-widest mt-2">

@@ -19,8 +19,8 @@ const LinkedInCase = () => {
             url: LinkedInAfter,
             category: "Organic Growth",
             accent: "#0077B5",
-            title: "Audience Scaling",
-            tagline: "1.3K → 5.8K Followers Transformation",
+            title: "Project Starting Point",
+            tagline: "1.3K Followers ",
             description:
                 "Strategically scaled a professional profile by identifying high-intent audience segments and optimizing content for LinkedIn's algorithm.",
             metrics: [
@@ -28,7 +28,7 @@ const LinkedInCase = () => {
                 "High Visibility",
                 "Organic Lead Gen"
             ],
-            btnLabel: "Growth Breakdown"
+            btnLabel: "Show Results"
         },
 
         {
@@ -36,7 +36,7 @@ const LinkedInCase = () => {
             url: LinkedInBefore,
             category: "Authority Building",
             accent: "#6366f1",
-            title: "Executive Branding",
+            title: "Project Ending Results",
             tagline: "Strategic Profile Positioning",
             description:
                 "Restructured digital identity through professional storytelling and visual alignment to establish industry leadership and trust.",
@@ -45,11 +45,10 @@ const LinkedInCase = () => {
                 "Visual Consistency",
                 "Credibility Score"
             ],
-            btnLabel: "Optimization Details"
+            btnLabel: "Show Results"
         }
     ];
 
-    // ================= MODAL =================
     const Modal = () => {
 
         if (!selectedItem) return null;
@@ -123,16 +122,13 @@ const LinkedInCase = () => {
                         LINKEDIN{" "}
 
                         <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-600">
-                            STRATEGY
+                            GROWTH
                         </span>
 
                     </h2>
 
                     <p className="text-gray-500 mt-6 max-w-xl text-lg font-light leading-relaxed">
-
-                        Moving beyond metrics to build professional authority
-                        and sustainable organic reach.
-
+                      Moving beyond vanity metrics to build strong LinkedIn authority, real engagement, and sustainable follower growth.
                     </p>
                 </div>
 
