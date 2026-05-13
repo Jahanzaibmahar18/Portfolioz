@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
 const HeroServices = () => {
+
   const services = [
     {
       title: "Social Strategy",
@@ -44,16 +45,25 @@ const HeroServices = () => {
 
   return (
     <section className="py-24 bg-black text-white overflow-hidden">
+
       <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
-        <div className="mb-14 text-center">
+        <div
+          data-aos="zoom-in"
+          className="mb-14 text-center"
+        >
+
           <p className="text-blue-500 uppercase tracking-[0.3em] text-sm font-bold">
             Our Expertise
           </p>
 
           <h2 className="text-5xl md:text-6xl font-black mt-4">
-            Next-Gen <span className="text-yellow-400">Marketing</span> Solutions
+            Next-Gen{" "}
+            <span className="text-yellow-400">
+              Marketing
+            </span>{" "}
+            Solutions
           </h2>
 
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
@@ -69,8 +79,13 @@ const HeroServices = () => {
           centeredSlides
           loop
           slidesPerView="auto"
-          autoplay={{ delay: 2200, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
+          autoplay={{
+            delay: 2200,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -80,8 +95,13 @@ const HeroServices = () => {
           }}
           className="pb-20"
         >
+
           {items.map((item, i) => (
-            <SwiperSlide key={i} className="max-w-sm px-3">
+            <SwiperSlide
+              key={i}
+              className="max-w-sm px-3"
+            >
+
               <div className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10 h-[360px] flex flex-col justify-between hover:bg-white/10 transition-all duration-500">
 
                 {/* ICON */}
@@ -91,6 +111,7 @@ const HeroServices = () => {
 
                 {/* CONTENT */}
                 <div className="mt-6">
+
                   <h3 className="text-xl font-bold group-hover:text-yellow-400 transition">
                     {item.title}
                   </h3>
@@ -117,10 +138,12 @@ const HeroServices = () => {
           transform: scale(0.9);
           transition: all 0.4s ease;
         }
+
         .swiper-slide-active {
           opacity: 1;
           transform: scale(1);
         }
+
         .swiper-pagination-bullet-active {
           background: #facc15 !important;
           width: 24px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroServices from '../Services/HeroServices'
-import ServiceGrid from '../Services/ServiceGrid'
+// import ServiceGrid from '../Services/ServiceGrid'
 
 const Services = () => {
   return (
@@ -8,7 +8,7 @@ const Services = () => {
 
 
         <HeroServices/>
-        <ServiceGrid/>
+        {/* <ServiceGrid/> */}
     </div>
   )
 }

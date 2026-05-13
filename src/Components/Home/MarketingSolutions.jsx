@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   BarChart3,
   Search,
@@ -9,6 +8,7 @@ import {
 } from "lucide-react";
 
 const MarketingSolutions = () => {
+
   const services = [
     {
       id: 1,
@@ -45,15 +45,18 @@ const MarketingSolutions = () => {
 
   return (
     <section className="bg-black text-white py-5 overflow-hidden relative">
-      
+
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-125 h-125 bg-blue-600/10 blur-[140px] rounded-full"></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-        
+
         {/* HEADER */}
-        <div className="text-center max-w-4xl mx-auto mb-10">
-          
+        <div
+          data-aos="zoom-out-down"
+          className="text-center max-w-4xl mx-auto mb-10"
+        >
+
           <span className="inline-flex items-center rounded-full bg-white/5 border border-white/10 backdrop-blur-xl text-blue-400 text-sm font-semibold ">
             Our Expertise
           </span>
@@ -73,13 +76,14 @@ const MarketingSolutions = () => {
 
         {/* SERVICES GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
+
           {services.map((item) => (
             <div
               key={item.id}
+              data-aos="zoom-in"
               className="group relative bg-white/5 border border-white/10 backdrop-blur-xl rounded-[30px] p-8 overflow-hidden hover:-translate-y-3 hover:border-blue-500/30 transition-all duration-500 shadow-xl"
             >
-              
+
               {/* Hover Glow */}
               <div
                 className={`absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-br ${item.color} transition duration-500`}
@@ -94,7 +98,7 @@ const MarketingSolutions = () => {
 
               {/* Content */}
               <div className="relative z-10">
-                
+
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-blue-400 transition">
                   {item.title}
                 </h3>
@@ -120,12 +124,12 @@ const MarketingSolutions = () => {
 
         {/* STATS SECTION */}
         <div className="mt-24 relative rounded-[40px] bg-white/5 border border-white/10 backdrop-blur-xl p-12 lg:p-16 overflow-hidden shadow-2xl">
-          
+
           {/* Glow */}
           <div className="absolute top-0 right-0 w-80 h-80 bg-blue-600/20 blur-[140px] rounded-full"></div>
 
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            
+
             {/* STAT */}
             <div>
               <h3 className="text-6xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">

@@ -49,10 +49,8 @@ const App = () => {
       <Footer/>
 <WhatsAppButton/>
      
-
-
-     
     </div>
+    
   );
 };
 

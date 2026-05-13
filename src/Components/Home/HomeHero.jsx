@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import zahid from "../../assets/zahid.png";
-// import { Link } from "lucide-react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HomeHero = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <section className="h-full bg-black text-white overflow-hidden flex items-center relative">
 
@@ -14,7 +24,10 @@ const HomeHero = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24 grid lg:grid-cols-2 gap-20 items-center relative z-10">
 
         {/* LEFT CONTENT */}
-        <div className="text-center lg:text-left">
+        <div
+          data-aos="fade-right"
+          className="text-center lg:text-left"
+        >
 
           {/* Badge */}
           <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-blue-400 text-sm font-semibold mb-8">
@@ -50,6 +63,7 @@ const HomeHero = () => {
               </button>
             </a>
           </div>
+
           {/* Skills */}
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-12">
 
@@ -61,6 +75,7 @@ const HomeHero = () => {
             ].map((item, index) => (
               <span
                 key={index}
+                data-aos="flip-up"
                 className="px-5 py-3 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl text-gray-300 hover:text-white hover:border-blue-500 hover:scale-105 transition-all duration-300"
               >
                 {item}
@@ -70,7 +85,10 @@ const HomeHero = () => {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative flex justify-center">
+        <div
+          data-aos="fade-left"
+          className="relative flex justify-center"
+        >
 
           {/* Glow */}
           <div className="absolute w-[420px] h-[420px] bg-blue-600/20 blur-[120px] rounded-full"></div>
