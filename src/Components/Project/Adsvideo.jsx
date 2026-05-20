@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 // === ASSETS ===
 import ads1 from "../../assets/ads1.mp4";
 import ads2 from "../../assets/ads2.mp4";
+import img1 from "../../assets/img1.png";
+import img2 from "../../assets/img2.png";
 
 const Adsvideo = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -23,6 +25,7 @@ const Adsvideo = () => {
     {
       id: 1,
       url: ads1,
+      thumbnail: img1,
       category: "Video Editing",
       title: "Edited product focused visuals for a polished brand look",
       tagline: "High-Impact Video Promotion",
@@ -35,6 +38,7 @@ const Adsvideo = () => {
     {
       id: 2,
       url: ads2,
+      thumbnail: img2,
       category: "AI Generated Video",
       title: "I Create Ads That Don’t Just Look Good They Sell",
       tagline: "Modern Marketing Solution",
@@ -107,9 +111,6 @@ const Adsvideo = () => {
                 ))}
               </div>
 
-              <button className="py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-105 transition">
-                {selectedItem.btnLabel}
-              </button>
             </div>
           </div>
         </div>
@@ -119,9 +120,8 @@ const Adsvideo = () => {
 
   return (
     <section
-      className={`bg-[#0a0a0a] py-20 px-6 transition-opacity duration-1000 ${
-        isLoaded ? "opacity-100" : "opacity-0"
-      }`}
+      className={`bg-[#0a0a0a] py-20 px-6 transition-opacity duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"
+        }`}
     >
       <div className="max-w-7xl mx-auto">
 
@@ -154,11 +154,12 @@ const Adsvideo = () => {
               className="bg-[#111] border border-white/10 rounded-3xl overflow-hidden cursor-pointer group hover:border-cyan-500/30 transition-all duration-500"
             >
 
-              {/* Video */}
+              {/* Thumbnail */}
               <div className="relative aspect-video overflow-hidden">
 
-                <video
-                  src={item.url}
+                <img
+                  src={item.thumbnail}
+                  alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
                 />
 
