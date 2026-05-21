@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 // === ASSETS ===
-import LinkedInBefore from '../../assets/mar4.png';
-import LinkedInAfter from '../../assets/mar5.png';
+import LinkedInBefore from '../../assets/mar5.png';
+import LinkedInAfter from '../../assets/mar4.png';
 
 const LinkedInCase = () => {
     const [selectedItem, setSelectedItem] = useState(null);
